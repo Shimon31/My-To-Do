@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="10dp"
     tools:context=".LanguageFragment">
 
@@ -25,11 +25,11 @@
                 android:id="@+id/btnArrowLeft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
                 android:background="@drawable/rectangle_border_name_black_900_radius_7"
                 android:paddingHorizontal="@dimen/_6pxh"
                 android:paddingVertical="@dimen/_6pxv"
                 android:scaleType="fitCenter"
-                android:layout_marginLeft="33dp"
                 android:src="@drawable/img_arrow_left"
                 tools:ignore="ContentDescription" />
         </androidx.appcompat.widget.Toolbar>
@@ -47,8 +47,8 @@
                 android:id="@+id/linearPageHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="start"
                 android:layout_marginBottom="50dp"
+                android:gravity="start"
                 android:orientation="vertical"
                 android:paddingStart="@dimen/_1pxh"
                 android:paddingEnd="@dimen/_1pxh">
@@ -61,8 +61,7 @@
                     android:ellipsize="end"
                     android:lineSpacingExtra="@dimen/_14pxh"
                     android:singleLine="true"
-                    android:text="@{languageVM.languageModel.txtLanguage}"
-                    tools:text="@string/lbl_language" />
+                    android:text="@string/lbl_language" />
 
                 <TextView
                     android:id="@+id/txtYourSettingsSo"
@@ -70,12 +69,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
-                    android:textSize="14sp"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    android:text="@{languageVM.languageModel.txtYourSettingsSo}"
-                    tools:text="@string/msg_your_settings_so" />
+                    android:text="@string/msg_your_settings_so"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -83,9 +81,9 @@
                 android:layout_width="@dimen/_311pxh"
                 android:layout_height="@dimen/_60pxv"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/rectangle_bg_name_deep_orange_50_radius_14"
                 android:ellipsize="end"
-                android:layout_marginBottom="30dp"
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:paddingStart="@dimen/_30pxh"
@@ -98,19 +96,18 @@
                 android:textColor="@color/secondaryContainer"
                 android:textFontWeight="500"
                 android:textSize="@dimen/_12pxh"
-                android:textStyle="bold"
-                tools:text="@string/lbl_indonesian2" />
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnEnglish"
                 android:layout_width="@dimen/_311pxh"
                 android:layout_height="@dimen/_60pxv"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/rectangle_bg_name_gray_50_03_radius_14"
                 android:ellipsize="end"
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
-                android:layout_marginBottom="30dp"
                 android:paddingStart="@dimen/_30pxh"
                 android:paddingTop="@dimen/_21pxv"
                 android:paddingEnd="@dimen/_30pxh"
@@ -121,8 +118,7 @@
                 android:textColor="@color/deep_purple_A400"
                 android:textFontWeight="500"
                 android:textSize="@dimen/_12pxh"
-                android:textStyle="bold"
-                tools:text="@string/lbl_english" />
+                android:textStyle="bold" />
 
             <FrameLayout
                 android:id="@+id/frameSpacer"
@@ -134,11 +130,11 @@
                 android:layout_width="@dimen/_311pxh"
                 android:layout_height="@dimen/_60pxv"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/rectangle_bg_name_primary_radius_14"
                 android:ellipsize="end"
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
-                android:layout_marginBottom="30dp"
                 android:paddingStart="@dimen/_30pxh"
                 android:paddingTop="@dimen/_18pxv"
                 android:paddingEnd="@dimen/_30pxh"
@@ -149,8 +145,7 @@
                 android:textColor="@color/white_A700"
                 android:textFontWeight="600"
                 android:textSize="@dimen/_16pxh"
-                android:textStyle="bold"
-                tools:text="@string/lbl_save" />
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 

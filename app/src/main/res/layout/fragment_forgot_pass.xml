@@ -48,7 +48,7 @@
                     android:ellipsize="end"
                     android:singleLine="true"
                     android:layout_marginLeft="140dp"
-                    tools:text="@string/lbl_forgot_password" />
+                    android:text="@string/lbl_forgot_password" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
 
@@ -75,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:lineSpacingExtra="@dimen/_10pxh"
-                    tools:text="@string/msg_helping_others_means" />
+                    android:text="@string/msg_helping_others_means" />
 
                 <TextView
                     android:id="@+id/txtIfYouAreAlways"
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_8pxh"
-                    tools:text="@string/msg_if_you_are_always" />
+                    android:text="@string/msg_if_you_are_always" />
             </LinearLayout>
 
             <ImageView
@@ -105,7 +105,7 @@
                 android:layout_gravity="center_horizontal"
                 android:ellipsize="end"
                 android:singleLine="true"
-                tools:text="@string/lbl_forgot_password" />
+                android:text="@string/lbl_forgot_password" />
 
             <EditText
                 android:id="@+id/etEmail"
@@ -136,7 +136,7 @@
                 android:gravity="start"
                 android:letterSpacing="0.01"
                 android:lineSpacingExtra="@dimen/_8pxh"
-                tools:text="@string/msg_lorem_ipsum_dolor" />
+                android:text="@string/msg_lorem_ipsum_dolor" />
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -153,13 +153,12 @@
             android:paddingEnd="@dimen/_30pxh"
             android:paddingBottom="@dimen/_19pxv"
             android:singleLine="true"
-            android:text="@string/lbl_start"
             android:textAllCaps="false"
             android:textColor="@color/white_A700"
             android:textFontWeight="500"
             android:textSize="@dimen/_14pxh"
             android:textStyle="bold"
-            tools:text="@string/lbl_start" />
+            android:text="@string/lbl_start" />
     </LinearLayout>
 
 </LinearLayout>

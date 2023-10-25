@@ -48,7 +48,7 @@
                     android:layout_marginLeft="190dp"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    tools:text="@string/lbl_personality" />
+                    android:text="@string/lbl_personality" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
 
@@ -94,7 +94,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/lbl_edit_photo" />
+                        android:text="@string/lbl_edit_photo" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -113,7 +113,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/lbl_username" />
+                        android:text="@string/lbl_username" />
 
                     <EditText
                         android:id="@+id/etUserName"
@@ -154,7 +154,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/lbl_first_name2" />
+                        android:text="@string/lbl_first_name2" />
 
                     <EditText
                         android:id="@+id/etFirstName"
@@ -195,7 +195,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/lbl_last_name2" />
+                        android:text="@string/lbl_last_name2" />
 
                     <EditText
                         android:id="@+id/etLastName"
@@ -236,7 +236,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/lbl_hobby" />
+                        android:text="@string/lbl_hobby" />
 
                     <EditText
                         android:id="@+id/etHobby"
@@ -277,7 +277,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/lbl_date_of_birth" />
+                        android:text="@string/lbl_date_of_birth" />
 
                     <EditText
                         android:id="@+id/etDateOfBirth"
@@ -318,7 +318,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/lbl_country" />
+                        android:text="@string/lbl_country" />
 
                     <EditText
                         android:id="@+id/etCountry"
@@ -356,13 +356,12 @@
                     android:paddingEnd="@dimen/_30pxh"
                     android:paddingBottom="@dimen/_18pxv"
                     android:singleLine="true"
-                    android:text="@string/lbl_change_save"
                     android:textAllCaps="false"
                     android:textColor="@color/white_A700"
                     android:textFontWeight="600"
                     android:textSize="@dimen/_16pxh"
                     android:textStyle="bold"
-                    tools:text="@string/lbl_change_save" />
+                    android:text="@string/lbl_change_save" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

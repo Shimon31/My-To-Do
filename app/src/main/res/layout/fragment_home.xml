@@ -39,8 +39,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtAdalah}"
-                tools:text="@string/lbl_adalah" />
+                android:text="@string/lbl_adalah" />
 
             <TextView
                 android:id="@+id/txtAlcanasatre"
@@ -49,8 +48,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtAlcanasatre}"
-                tools:text="@string/lbl_alcanasatre" />
+                android:text="@string/lbl_alcanasatre" />
 
             <TextView
                 android:id="@+id/txtDuration"
@@ -59,9 +57,8 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtDuration}"
                 tools:ignore="TextSizeCheck"
-                tools:text="@string/msg_joined_6_month_ago" />
+                android:text="@string/msg_joined_6_month_ago" />
         </LinearLayout>
 
         <LinearLayout
@@ -100,8 +97,8 @@
                 android:layout_marginLeft="20dp"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtPersonality}"
-                tools:text="@string/lbl_personality" />
+
+                android:text="@string/lbl_personality" />
 
             <FrameLayout
                 android:id="@+id/frameSpacer1"
@@ -156,8 +153,7 @@
                 android:layout_marginLeft="20dp"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtWorkTodayS}"
-                tools:text="@string/lbl_work_today_s" />
+                android:text="@string/lbl_work_today_s" />
 
             <FrameLayout
                 android:id="@+id/frameSpacer3"
@@ -212,8 +208,7 @@
                 android:layout_marginLeft="20dp"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtSetting}"
-                tools:text="@string/lbl_setting" />
+                android:text="@string/lbl_setting" />
 
             <FrameLayout
                 android:id="@+id/frameSpacer5"

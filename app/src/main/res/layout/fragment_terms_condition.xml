@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="@dimen/_10pxh"
-                tools:text="@string/msg_terms_and_conditions" />
+                android:text="@string/msg_terms_and_conditions" />
 
             <TextView
                 android:id="@+id/txtDescription"
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:letterSpacing="0.01"
                 android:lineSpacingExtra="@dimen/_12pxh"
-                tools:text="@string/msg_lorem_ipsum_dolor2" />
+                android:text="@string/msg_lorem_ipsum_dolor2" />
         </LinearLayout>
     </LinearLayout>
 

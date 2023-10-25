@@ -59,8 +59,7 @@
                     android:ellipsize="end"
                     android:lineSpacingExtra="@dimen/_14pxh"
                     android:singleLine="true"
-                    android:text="@{settingsVM.settingsModel.txtSettings}"
-                    tools:text="@string/lbl_settings" />
+                    android:text="@string/lbl_settings" />
 
                 <TextView
                     android:id="@+id/txtYourSettingsSo"
@@ -71,8 +70,7 @@
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    android:text="@{settingsVM.settingsModel.txtYourSettingsSo}"
-                    tools:text="@string/msg_your_settings_so" />
+                    android:text="@string/msg_your_settings_so" />
             </LinearLayout>
 
             <LinearLayout
@@ -96,8 +94,7 @@
                     android:layout_gravity="bottom"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="@{settingsVM.settingsModel.txtPersonality}"
-                    tools:text="@string/lbl_personality" />
+                    android:text="@string/lbl_personality" />
 
                 <ImageView
                     android:id="@+id/imageArrowRight"
@@ -132,8 +129,7 @@
                     android:layout_gravity="bottom"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="@{settingsVM.settingsModel.txtLanguage}"
-                    tools:text="@string/lbl_language" />
+                    android:text="@string/lbl_language" />
 
                 <ImageView
                     android:id="@+id/imageArrowRight1"
@@ -167,8 +163,7 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="@{settingsVM.settingsModel.txtTermAndCondition}"
-                    tools:text="@string/msg_terms_and_conditions" />
+                    android:text="@string/msg_terms_and_conditions" />
 
                 <ImageView
                     android:id="@+id/imageArrowRight2"
@@ -201,13 +196,12 @@
                 android:paddingEnd="@dimen/_30pxh"
                 android:paddingBottom="@dimen/_18pxv"
                 android:singleLine="true"
-                android:text="@string/lbl_log_out"
                 android:textAllCaps="false"
                 android:textColor="@color/secondaryContainer"
                 android:textFontWeight="600"
                 android:textSize="@dimen/_16pxh"
                 android:textStyle="bold"
-                tools:text="@string/lbl_log_out" />
+                android:text="@string/lbl_log_out" />
         </LinearLayout>
     </LinearLayout>
 

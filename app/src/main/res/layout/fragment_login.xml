@@ -48,7 +48,7 @@
                     android:layout_gravity="center_vertical"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    tools:text="@string/lbl_login" />
+                    android:text="@string/lbl_login" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
 
@@ -80,7 +80,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:lineSpacingExtra="@dimen/_6pxh"
-                        tools:text="@string/msg_this_is_your_community" />
+                        android:text="@string/msg_this_is_your_community" />
 
                     <TextView
                         android:id="@+id/txtOurCommunityIs"
@@ -90,7 +90,7 @@
                         android:letterSpacing="0.01"
                         android:layout_marginBottom="10dp"
                         android:lineSpacingExtra="@dimen/_8pxh"
-                        tools:text="@string/msg_our_community_is3" />
+                        android:text="@string/msg_our_community_is3" />
                 </LinearLayout>
 
                 <ImageView
@@ -159,7 +159,7 @@
                     android:layout_marginBottom="10dp"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    tools:text="@string/msg_forgot_password" />
+                    android:text="@string/msg_forgot_password" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnNext"
@@ -175,13 +175,12 @@
                     android:paddingEnd="@dimen/_30pxh"
                     android:paddingBottom="@dimen/_19pxv"
                     android:singleLine="true"
-                    android:text="@string/lbl_next"
                     android:textAllCaps="false"
                     android:textColor="@color/white_A700"
                     android:textFontWeight="500"
                     android:textSize="@dimen/_14pxh"
                     android:textStyle="bold"
-                    tools:text="@string/lbl_next" />
+                    android:text="@string/lbl_next" />
 
                 <LinearLayout
                     android:id="@+id/linearDonTHaveAnAccount"
@@ -200,7 +199,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/msg_don_t_have_an_account" />
+                        android:text="@string/msg_don_t_have_an_account" />
 
                     <TextView
                         android:id="@+id/txtSignUp"
@@ -212,7 +211,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        tools:text="@string/lbl_signup2" />
+                        android:text="@string/lbl_signup2" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

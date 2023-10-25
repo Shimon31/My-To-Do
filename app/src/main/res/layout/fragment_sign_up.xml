@@ -79,7 +79,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:lineSpacingExtra="@dimen/_6pxh"
-                        tools:text="@string/msg_when_community_comes" />
+                        android:text="@string/msg_when_community_comes" />
 
                     <TextView
                         android:id="@+id/txtDuration"
@@ -88,8 +88,7 @@
                         android:layout_height="wrap_content"
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_8pxh"
-                        android:text="@{signupVM.signupModel.txtDuration}"
-                        tools:text="@string/msg_our_community_is2" />
+                        android:text="@string/msg_our_community_is2" />
                 </LinearLayout>
 
                 <ImageView
@@ -116,7 +115,6 @@
                     android:paddingEnd="@dimen/_28pxh"
                     android:paddingBottom="@dimen/_19pxv"
                     android:singleLine="true"
-                    android:text="@={signupVM.signupModel.etFirstNameValue}"
                     android:textColor="@color/onPrimary"
                     android:textColorHint="@color/onPrimary"
                     android:textFontWeight="500"
@@ -138,7 +136,6 @@
                     android:paddingEnd="@dimen/_24pxh"
                     android:paddingBottom="@dimen/_19pxv"
                     android:singleLine="true"
-                    android:text="@={signupVM.signupModel.etLastNameValue}"
                     android:textColor="@color/onPrimary"
                     android:textColorHint="@color/onPrimary"
                     android:textFontWeight="500"
@@ -160,7 +157,6 @@
                     android:paddingEnd="@dimen/_24pxh"
                     android:paddingBottom="@dimen/_19pxv"
                     android:singleLine="true"
-                    android:text="@={signupVM.signupModel.etEmailValue}"
                     android:textColor="@color/onPrimary"
                     android:textColorHint="@color/onPrimary"
                     android:textFontWeight="500"
@@ -182,7 +178,6 @@
                     android:paddingEnd="@dimen/_24pxh"
                     android:paddingBottom="@dimen/_19pxv"
                     android:singleLine="true"
-                    android:text="@={signupVM.signupModel.etPasswordValue}"
                     android:textColor="@color/onPrimary"
                     android:textColorHint="@color/onPrimary"
                     android:textFontWeight="500"
@@ -190,16 +185,16 @@
                     android:textStyle="bold"
                     tools:ignore="Autofill" />
 
-                <TextView
-                    android:id="@+id/txtLoremIpsumDolor"
+                <CheckBox
+                    android:id="@+id/checkbox"
                     style="@style/txtPoppinsmedium12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
+                    android:layout_gravity="center"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_8pxh"
-                    android:text="@{signupVM.signupModel.txtLoremIpsumDolor}"
-                    tools:text="@string/msg_lorem_ipsum_dolor" />
+                    android:text="@string/msg_lorem_ipsum_dolor" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnNext"
@@ -214,13 +209,12 @@
                     android:paddingEnd="@dimen/_30pxh"
                     android:paddingBottom="@dimen/_19pxv"
                     android:singleLine="true"
-                    android:text="@string/lbl_next"
                     android:textAllCaps="false"
                     android:textColor="@color/white_A700"
                     android:textFontWeight="500"
                     android:textSize="@dimen/_14pxh"
                     android:textStyle="bold"
-                    tools:text="@string/lbl_next" />
+                    android:text="@string/lbl_next" />
 
                 <LinearLayout
                     android:id="@+id/linearAlreadyHaveAn"
@@ -239,8 +233,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        android:text="@{signupVM.signupModel.txtConfirmation}"
-                        tools:text="@string/msg_already_have_an" />
+                        android:text="@string/msg_already_have_an" />
 
                     <TextView
                         android:id="@+id/txtLogin"
@@ -252,8 +245,7 @@
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        android:text="@{signupVM.signupModel.txtLogin}"
-                        tools:text="@string/lbl_login" />
+                        android:text="@string/lbl_login" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

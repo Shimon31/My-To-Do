@@ -56,7 +56,7 @@
                     android:ellipsize="end"
                     android:lineSpacingExtra="@dimen/_14pxh"
                     android:singleLine="true"
-                    tools:text="@string/lbl_work_today_s2" />
+                    android:text="@string/lbl_work_today_s2" />
 
                 <TextView
                     android:id="@+id/txtMakeYourJobEasier"
@@ -67,7 +67,7 @@
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    tools:text="@string/msg_make_your_job_easier" />
+                    android:text="@string/msg_make_your_job_easier" />
             </LinearLayout>
 
             <LinearLayout
@@ -91,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        tools:text="@string/lbl_today" />
+                        android:text="@string/lbl_today" />
 
                     <TextView
                         android:id="@+id/txtDate"
@@ -100,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        tools:text="@string/lbl_02_april_2021" />
+                        android:text="@string/lbl_02_april_2021" />
                 </LinearLayout>
 
                 <ImageButton
@@ -146,7 +146,7 @@
                     android:layout_gravity="center_vertical"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    tools:text="@string/msg_research_product" />
+                    android:text="@string/msg_research_product" />
 
                 <FrameLayout
                     android:id="@+id/frameSpacer"
@@ -193,7 +193,7 @@
                     android:layout_gravity="center_vertical"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    tools:text="@string/msg_create_action_plan" />
+                    android:text="@string/msg_create_action_plan" />
 
                 <FrameLayout
                     android:id="@+id/frameSpacer1"
@@ -225,13 +225,12 @@
                 android:paddingEnd="@dimen/_30pxh"
                 android:paddingBottom="@dimen/_18pxv"
                 android:singleLine="true"
-                android:text="@string/msg_make_a_wish_list"
                 android:textAllCaps="false"
                 android:textColor="@color/white_A700"
                 android:textFontWeight="600"
                 android:textSize="@dimen/_16pxh"
                 android:textStyle="bold"
-                tools:text="@string/msg_make_a_wish_list" />
+                android:text="@string/msg_make_a_wish_list" />
         </LinearLayout>
     </LinearLayout>
 

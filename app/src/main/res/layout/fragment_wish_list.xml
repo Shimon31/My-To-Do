@@ -59,7 +59,7 @@
                     android:ellipsize="end"
                     android:lineSpacingExtra="@dimen/_14pxh"
                     android:singleLine="true"
-                    tools:text="@string/msg_make_a_wish_list" />
+                    android:text="@string/msg_make_a_wish_list" />
 
                 <TextView
                     android:id="@+id/txtMakeYourJobEasier"
@@ -70,7 +70,7 @@
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    tools:text="@string/msg_make_your_job_easier" />
+                    android:text="@string/msg_make_your_job_easier" />
             </LinearLayout>
 
             <LinearLayout
@@ -90,7 +90,7 @@
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    tools:text="@string/lbl_task_todo" />
+                    android:text="@string/lbl_task_todo" />
 
                 <EditText
                     android:id="@+id/etTaskField"
@@ -134,7 +134,7 @@
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    tools:text="@string/lbl_date" />
+                    android:text="@string/lbl_date" />
 
                 <LinearLayout
                     android:id="@+id/linearDateField"
@@ -167,7 +167,7 @@
                         android:layout_gravity="center_vertical"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        tools:text="@string/lbl_tt_mm_yy" />
+                        android:text="@string/lbl_tt_mm_yy" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -188,7 +188,7 @@
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    tools:text="@string/lbl_attachments" />
+                    android:text="@string/lbl_attachments" />
 
                 <EditText
                     android:id="@+id/etFilesize"
@@ -230,12 +230,11 @@
                 android:paddingEnd="@dimen/_30pxh"
                 android:paddingBottom="@dimen/_18pxv"
                 android:singleLine="true"
-                android:text="@string/msg_make_a_wish_list"
                 android:textAllCaps="false"
                 android:textFontWeight="600"
                 android:textSize="@dimen/_16pxh"
                 android:textStyle="bold"
-                tools:text="@string/msg_make_a_wish_list" />
+                android:text="@string/msg_make_a_wish_list" />
         </LinearLayout>
     </LinearLayout>
 

@@ -30,7 +30,11 @@
         android:id="@+id/signUpFragment"
         android:name="com.example.shimon.mytodo.signUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.shimon.mytodo.loginFragment"
@@ -56,43 +60,33 @@
         <action
             android:id="@+id/action_homeFragment_to_personalityFragment"
             app:destination="@id/personalityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_workTodayFragment"
+            app:destination="@id/workTodayFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
     </fragment>
     <fragment
         android:id="@+id/personalityFragment"
         android:name="com.example.shimon.mytodo.PersonalityFragment"
         android:label="fragment_personality"
-        tools:layout="@layout/fragment_personality" >
-        <action
-            android:id="@+id/action_personalityFragment_to_workTodayFragment"
-            app:destination="@id/workTodayFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_personality" />
     <fragment
         android:id="@+id/workTodayFragment"
         android:name="com.example.shimon.mytodo.WorkTodayFragment"
         android:label="fragment_work_today"
-        tools:layout="@layout/fragment_work_today" >
-        <action
-            android:id="@+id/action_workTodayFragment_to_wishListFragment"
-            app:destination="@id/wishListFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_work_today" />
     <fragment
         android:id="@+id/wishListFragment"
         android:name="com.example.shimon.mytodo.WishListFragment"
         android:label="fragment_wish_list"
-        tools:layout="@layout/fragment_wish_list" >
-        <action
-            android:id="@+id/action_wishListFragment_to_settingFragment"
-            app:destination="@id/settingFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_wish_list" />
     <fragment
         android:id="@+id/settingFragment"
         android:name="com.example.shimon.mytodo.SettingFragment"
         android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" >
-        <action
-            android:id="@+id/action_settingFragment_to_languageFragment"
-            app:destination="@id/languageFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/languageFragment"
         android:name="com.example.shimon.mytodo.LanguageFragment"
