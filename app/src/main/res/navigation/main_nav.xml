@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.shimon.mytodo.splashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginOrSignUpFragment"
+            app:destination="@id/loginOrSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginOrSignUpFragment"
+        android:name="com.example.shimon.mytodo.loginOrSignUpFragment"
+        android:label="fragment_login_or_sign_up"
+        tools:layout="@layout/fragment_login_or_sign_up" >
+        <action
+            android:id="@+id/action_loginOrSignUpFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginOrSignUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.shimon.mytodo.signUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.shimon.mytodo.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPassFragment"
+            app:destination="@id/forgotPassFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassFragment"
+        android:name="com.example.shimon.mytodo.forgotPassFragment"
+        android:label="fragment_forgot_pass"
+        tools:layout="@layout/fragment_forgot_pass" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.shimon.mytodo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_personalityFragment"
+            app:destination="@id/personalityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalityFragment"
+        android:name="com.example.shimon.mytodo.PersonalityFragment"
+        android:label="fragment_personality"
+        tools:layout="@layout/fragment_personality" >
+        <action
+            android:id="@+id/action_personalityFragment_to_workTodayFragment"
+            app:destination="@id/workTodayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workTodayFragment"
+        android:name="com.example.shimon.mytodo.WorkTodayFragment"
+        android:label="fragment_work_today"
+        tools:layout="@layout/fragment_work_today" >
+        <action
+            android:id="@+id/action_workTodayFragment_to_wishListFragment"
+            app:destination="@id/wishListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="com.example.shimon.mytodo.WishListFragment"
+        android:label="fragment_wish_list"
+        tools:layout="@layout/fragment_wish_list" >
+        <action
+            android:id="@+id/action_wishListFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.shimon.mytodo.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.shimon.mytodo.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" >
+        <action
+            android:id="@+id/action_languageFragment_to_termsConditionFragment"
+            app:destination="@id/termsConditionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsConditionFragment"
+        android:name="com.example.shimon.mytodo.TermsConditionFragment"
+        android:label="fragment_terms_condition"
+        tools:layout="@layout/fragment_terms_condition" />
+</navigation>

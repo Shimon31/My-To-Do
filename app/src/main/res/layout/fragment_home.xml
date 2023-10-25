@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearHome"
+        style="@style/groupStyle_white_a700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_30pxh"
+        android:paddingTop="@dimen/_79pxv"
+        android:paddingEnd="@dimen/_30pxh">
+
+        <LinearLayout
+            android:id="@+id/linearProfileDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_84pxh"
+            android:paddingEnd="@dimen/_84pxh">
+
+            <ImageView
+                android:id="@+id/imageProfileImage"
+                android:layout_width="@dimen/_139pxh"
+                android:layout_height="@dimen/_139pxh"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_profile_image" />
+
+            <TextView
+                android:id="@+id/txtAdalah"
+                style="@style/txtPoppinssemibold20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{homeVM.homeModel.txtAdalah}"
+                tools:text="@string/lbl_adalah" />
+
+            <TextView
+                android:id="@+id/txtAlcanasatre"
+                style="@style/txtPoppinsregular18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{homeVM.homeModel.txtAlcanasatre}"
+                tools:text="@string/lbl_alcanasatre" />
+
+            <TextView
+                android:id="@+id/txtDuration"
+                style="@style/txtPoppinsregular10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{homeVM.homeModel.txtDuration}"
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/msg_joined_6_month_ago" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPersonality"
+            style="@style/groupStyle_cornerRadius_rectangle_bg_name_secondarycontainer_radius_14"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_28pxh"
+            android:paddingTop="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_28pxh"
+            android:paddingBottom="@dimen/_16pxv">
+
+            <ImageView
+                android:id="@+id/imageLocation"
+                android:layout_width="@dimen/_20pxh"
+                android:layout_height="@dimen/_18pxh"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_location"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_location" />
+
+            <FrameLayout
+                android:id="@+id/frameSpacer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtPersonality"
+                style="@style/txtPoppinsmedium16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{homeVM.homeModel.txtPersonality}"
+                tools:text="@string/lbl_personality" />
+
+            <FrameLayout
+                android:id="@+id/frameSpacer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imageStrokeOne"
+                android:layout_width="@dimen/_5pxh"
+                android:layout_height="@dimen/_6pxh"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_stroke_1"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_stroke_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearWorkTodayS"
+            style="@style/groupStyle_cornerRadius_rectangle_bg_name_deep_purple_a400_opacity_0_05_radius_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_28pxh"
+            android:paddingTop="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_28pxh"
+            android:paddingBottom="@dimen/_16pxv">
+
+            <ImageView
+                android:id="@+id/imageFile"
+                android:layout_width="@dimen/_17pxh"
+                android:layout_height="@dimen/_20pxh"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_file"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_file" />
+
+            <FrameLayout
+                android:id="@+id/frameSpacer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtWorkTodayS"
+                style="@style/txtPoppinsmedium16_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{homeVM.homeModel.txtWorkTodayS}"
+                tools:text="@string/lbl_work_today_s" />
+
+            <FrameLayout
+                android:id="@+id/frameSpacer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imageStrokeOne1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="68dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_stroke_1_deep_purple_a400"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_stroke_1_deep_purple_a400" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSetting"
+            style="@style/groupStyle_cornerRadius_rectangle_opacity_0_05_radius_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_26pxh"
+            android:paddingTop="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_26pxh"
+            android:paddingBottom="@dimen/_15pxv">
+
+            <ImageView
+                android:id="@+id/imageSettings"
+                android:layout_width="@dimen/_19pxh"
+                android:layout_height="@dimen/_20pxh"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_settings"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_settings" />
+
+            <FrameLayout
+                android:id="@+id/frameSpacer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtSetting"
+                style="@style/txtPoppinsmedium16_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{homeVM.homeModel.txtSetting}"
+                tools:text="@string/lbl_setting" />
+
+            <FrameLayout
+                android:id="@+id/frameSpacer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imageStrokeOne2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="115dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_stroke_1_primary"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_stroke_1_primary" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

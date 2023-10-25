@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".forgotPassFragment">
+
+    <LinearLayout
+        android:id="@+id/linearTwentyThree"
+        style="@style/groupStyle_white_a700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_29pxv"
+        android:paddingBottom="@dimen/_29pxv">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnArrowLeft"
+                    android:layout_width="@dimen/_24pxh"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_gravity="top"
+                    android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrow_left"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txtPersonality"
+                    style="@style/txtPoppinssemibold18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_marginLeft="140dp"
+                    tools:text="@string/lbl_forgot_password" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/linearForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_31pxh"
+            android:paddingTop="@dimen/_22pxv"
+            android:paddingEnd="@dimen/_31pxh"
+            android:paddingBottom="@dimen/_22pxv">
+
+            <LinearLayout
+                android:id="@+id/linearPageHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHelpingOthersMeans"
+                    style="@style/txtPoppinsbold34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/_10pxh"
+                    tools:text="@string/msg_helping_others_means" />
+
+                <TextView
+                    android:id="@+id/txtIfYouAreAlways"
+                    style="@style/txtPoppinsmedium12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    tools:text="@string/msg_if_you_are_always" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="@dimen/_135pxh"
+                android:layout_height="@dimen/_121pxh"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_logo_gray_50_01_121x135"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_logo_gray_50_01_121x135" />
+
+            <TextView
+                android:id="@+id/txtForgotPassword"
+                style="@style/txtPoppinssemibold18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                tools:text="@string/lbl_forgot_password" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/lbl_your_email"
+                android:inputType="text"
+                android:paddingStart="@dimen/_24pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_24pxh"
+                android:paddingBottom="@dimen/_19pxv"
+                android:singleLine="true"
+                android:textColor="@color/onPrimary"
+                android:textColorHint="@color/onPrimary"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14pxh"
+                android:textStyle="bold"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/txtLoremIpsumDolor"
+                style="@style/txtPoppinsregular12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                tools:text="@string/msg_lorem_ipsum_dolor" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStart"
+            android:layout_width="@dimen/_311pxh"
+            android:layout_height="@dimen/_60pxv"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rectangle_bg_name_primary_radius_14"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_19pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_19pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_start"
+            android:textAllCaps="false"
+            android:textColor="@color/white_A700"
+            android:textFontWeight="500"
+            android:textSize="@dimen/_14pxh"
+            android:textStyle="bold"
+            tools:text="@string/lbl_start" />
+    </LinearLayout>
+
+</LinearLayout>

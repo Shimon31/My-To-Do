@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    tools:context=".PersonalityFragment">
+
+    <LinearLayout
+        android:id="@+id/linearThirteen"
+        style="@style/groupStyle_white_a700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnArrowLeft"
+                    android:layout_width="@dimen/_24pxh"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_gravity="top"
+                    android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                    android:paddingHorizontal="@dimen/_6pxh"
+                    android:paddingVertical="@dimen/_6pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrow_left"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txtPersonality"
+                    style="@style/txtPoppinssemibold18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="190dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    tools:text="@string/lbl_personality" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/scrollViewScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearPersonality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearEditProfilePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_86pxh"
+                    android:paddingEnd="@dimen/_86pxh">
+
+                    <ImageView
+                        android:id="@+id/imageProfileImage"
+                        android:layout_width="@dimen/_139pxh"
+                        android:layout_height="@dimen/_139pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_profile_image" />
+
+                    <TextView
+                        android:id="@+id/txtEditPhoto"
+                        style="@style/txtPoppinsmedium12_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        tools:text="@string/lbl_edit_photo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtUserName"
+                        style="@style/txtPoppinsmedium12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        tools:text="@string/lbl_username" />
+
+                    <EditText
+                        android:id="@+id/etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/lbl_adalahalcana"
+                        android:inputType="text"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="@dimen/_24pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingBottom="@dimen/_19pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/onPrimary"
+                        android:textColorHint="@color/onPrimary"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14pxh"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFirstName"
+                        style="@style/txtPoppinsmedium12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        tools:text="@string/lbl_first_name2" />
+
+                    <EditText
+                        android:id="@+id/etFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/lbl_alcanasatre"
+                        android:inputType="text"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="@dimen/_24pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingBottom="@dimen/_19pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/onPrimary"
+                        android:textColorHint="@color/onPrimary"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14pxh"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtLastName"
+                        style="@style/txtPoppinsmedium12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        tools:text="@string/lbl_last_name2" />
+
+                    <EditText
+                        android:id="@+id/etLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/lbl_fourta"
+                        android:inputType="text"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="@dimen/_24pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingBottom="@dimen/_19pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/onPrimary"
+                        android:textColorHint="@color/onPrimary"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14pxh"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearHobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtHobby"
+                        style="@style/txtPoppinsmedium12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        tools:text="@string/lbl_hobby" />
+
+                    <EditText
+                        android:id="@+id/etHobby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/lbl_sleep"
+                        android:inputType="text"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="@dimen/_24pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingBottom="@dimen/_19pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/onPrimary"
+                        android:textColorHint="@color/onPrimary"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14pxh"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDateOfBirth"
+                        style="@style/txtPoppinsmedium12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        tools:text="@string/lbl_date_of_birth" />
+
+                    <EditText
+                        android:id="@+id/etDateOfBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/lbl_28_may_2002"
+                        android:inputType="text"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="@dimen/_24pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingBottom="@dimen/_19pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/onPrimary"
+                        android:textColorHint="@color/onPrimary"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14pxh"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCountry"
+                        style="@style/txtPoppinsmedium12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        tools:text="@string/lbl_country" />
+
+                    <EditText
+                        android:id="@+id/etCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/lbl_indonesian"
+                        android:inputType="text"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="@dimen/_24pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingBottom="@dimen/_19pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/onPrimary"
+                        android:textColorHint="@color/onPrimary"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14pxh"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnChangeSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_bg_name_primary_radius_14"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_change_save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_A700"
+                    android:textFontWeight="600"
+                    android:textSize="@dimen/_16pxh"
+                    android:textStyle="bold"
+                    tools:text="@string/lbl_change_save" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
