@@ -1,5 +1,5 @@
 # My-To-Do
 Project View
-![Screenshot_20231026_224344](https://github.com/Shimon31/My-To-Do/assets/73957684/8492ea01-8332-4703-b4b4-4a4f78b6806a)
-![Screenshot_20231026_225313](https://github.com/Shimon31/My-To-Do/assets/73957684/fde3dc55-d701-4ed2-9799-951948e0d7f0)
-![Screenshot_20231026_225344](https://github.com/Shimon31/My-To-Do/assets/73957684/ae5e143f-f115-4dd5-ad3f-dd8d856c1095)
+![Screenshot 2023-10-26 231034](https://github.com/Shimon31/My-To-Do/assets/73957684/b2c4a8db-2075-4224-95e6-994662327951)
+![Screenshot 2023-10-26 230709](https://github.com/Shimon31/My-To-Do/assets/73957684/87fbb1ba-0552-4fba-bb5c-8310f0d3663f)
+![Screenshot 2023-10-26 230645](https://github.com/Shimon31/My-To-Do/assets/73957684/cb58af24-82e5-4c0f-9c80-75e743057abf)
